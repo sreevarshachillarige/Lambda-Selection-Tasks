@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Basic HTML setup with meta tags for character encoding and viewport settings, title of the page, and linking to the CSS stylesheet for styling the game.-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scales=1.0"/>
+        <!-- Adds the title at the top of the page-->
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="Styles.css"/>
+    </head>
+    <body>
+        <div class="app">
+            <div class="game">
+                <h1>Tic-Tac-Toe</h1>
+
+                
+            <!--Display the scoreboard-->
+                <div class="scoreboard">
+                    <div class="score score-x" id="score-x-box">
+                        <span class="score-label">Player X</span>
+                        <span class="score-value" id="score-x">0</span>
+                    </div>
+
+                    <div class="score score draw">
+                        <span class="score-label">Draws</span>
+                        <span class="score-value" id="score-draws">0</span>
+                    </div>
+
+                    <div class="score score-o" id="score-o-box">
+                        <span class="score-label">Player O</span>
+                        <span class="score-value" id="score-o">0</span>
+                    </div>
+                </div>
+
+
+                <div class="status" id="status">X's Turn</div>
+                <div class="board" id="board"></div>
+
+                <div class="controls">
+                    <button class="btn btn-primary" id="new-round">New Round</button>
+                    <button class="btn" id="reset-scores">Reset Scores</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="Logic.js"></script>
+        <script src="Game.js"></script>
+    </body>
+</html>
